@@ -1,0 +1,2 @@
+1) Create the Cognitive service in Azure portal and get it.
+2) Update that subscription key in "HomeController.cs" file.
