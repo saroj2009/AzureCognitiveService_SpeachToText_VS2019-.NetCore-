@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1><p>@ViewData["Message2"]</p>  </h1>
+</div>*@
+    <body>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <div>
+                <div class="form-group" action="post">
+                    <div class="row">
+                        <h2>Speech To Text</h2><br />
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <label class="control-label">Audio file Name:</label><br />
+
+                            Audio 1:<audio controls>
+
+                                <source src="https://sarojwebappstorage.blob.core.windows.net/createtodelete/whatstheweatherlike.wav" type="audio/mpeg">
+
+                                Your browser does not support the audio element.
+                            </audio><br />
+                            Audio 2:<audio controls>
+
+
+                                <source src="https://sarojwebappstorage.blob.core.windows.net/createtodelete/wreck-a-nice-beach.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <textarea rows="10" cols="40" class="alert-info">@ViewData["Message2"]</textarea>
+                            <button type="submit" name="Video1" value="v1" class="btn btn-success">Convert(Audio-1)</button>
+                            <button type="submit" name="Video2" value="v2" class="btn btn-success">Convert(Audio-2)</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>}</body>

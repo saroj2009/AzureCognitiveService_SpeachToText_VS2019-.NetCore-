@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AudioFiles\whatstheweatherlike.wav" />
+    <None Remove="AudioFiles\wreck-a-nice-beach.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AudioFiles\whatstheweatherlike.wav" />
+    <Content Include="AudioFiles\wreck-a-nice-beach.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.8.0" />
+  </ItemGroup>
+
+</Project>
