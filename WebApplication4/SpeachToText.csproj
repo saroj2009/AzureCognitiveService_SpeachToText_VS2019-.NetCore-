@@ -5,13 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AudioFiles\whatstheweatherlike.wav" />
-    <None Remove="AudioFiles\wreck-a-nice-beach.wav" />
+    <Content Remove="wwwroot\AudioFiles\female.wav" />
+    <Content Remove="wwwroot\AudioFiles\female600.wav" />
+    <Content Remove="wwwroot\AudioFiles\male600.wav" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="AudioFiles\whatstheweatherlike.wav" />
-    <Content Include="AudioFiles\wreck-a-nice-beach.wav" />
+    <None Include="wwwroot\AudioFiles\female.wav" />
+    <None Include="wwwroot\AudioFiles\female600.wav" />
+    <None Include="wwwroot\AudioFiles\male600.wav" />
   </ItemGroup>
 
   <ItemGroup>

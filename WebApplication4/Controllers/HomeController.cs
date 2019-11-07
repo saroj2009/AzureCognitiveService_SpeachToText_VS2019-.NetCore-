@@ -50,7 +50,7 @@ namespace WebApplication4.Controllers
 
             // Creates an instance of a speech translation config with specified subscription key and service region.
             // Replace with your own subscription key and service region (e.g., "westus").
-            var config = SpeechTranslationConfig.FromSubscription("8fe93a8c99734245a2b103109ae0290f", "southcentralus");
+            var config = SpeechTranslationConfig.FromSubscription("e2fcbcfe7eee439eb6a573ae7b30665e", "westus2");
             config.SpeechRecognitionLanguage = fromLanguage;
 
             // Translation target language(s).
@@ -66,9 +66,9 @@ namespace WebApplication4.Controllers
             {
                 string path = "";
                 if (val == "v1")
-                    path = "AudioFiles\\whatstheweatherlike.wav";
+                    path = "wwwroot\\AudioFiles\\whatstheweatherlike.wav";
                 else
-                    path = "AudioFiles\\wreck-a-nice-beach.wav";
+                    path = "wwwroot\\AudioFiles\\wreck-a-nice-beach.wav";
                 using (var audioInput = AudioConfig.FromWavFileInput(@path))
                 {
                     using (var recognizer = new TranslationRecognizer(config, audioInput))
